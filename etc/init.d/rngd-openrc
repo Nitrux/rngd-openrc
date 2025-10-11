@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+
+description="Starts the rngd entropy gathering daemon"
+
+command="/usr/sbin/rngd"
+supervisor="supervise-daemon"
+
+command_args="-f ${RNGD_OPTS}"
+
+depend() {
+    need dev localmount
+    after udev
+    provide rng
+}
+
+start_pre() {
+	if [ ! -c /dev/hwrng ]; then
+		einfo "No hardware RNG device found; rngd may use other entropy sources."
+	fi
+}

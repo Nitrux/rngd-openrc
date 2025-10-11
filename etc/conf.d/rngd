@@ -1,0 +1,2 @@
+# Take hardware entropy; use a reasonable fill-watermark; don't rely on hardware TPM for entropy.
+RNGD_OPTS="-r /dev/hwrng -W 2048 --no-tpm=1"
