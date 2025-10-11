@@ -1,4 +1,4 @@
-polkitd-openrc (0.0.1)  nitrux; urgency=medium
+rngd-openrc (0.0.1)  nitrux; urgency=medium
 
   * Create package.
 
