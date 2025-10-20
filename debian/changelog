@@ -1,3 +1,9 @@
+rngd-openrc (0.0.2)  nitrux; urgency=medium
+
+  * Unquote supervise-daemon use.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 20 Oct 2025 17:57:00 -0500
+
 rngd-openrc (0.0.1)  nitrux; urgency=medium
 
   * Create package.

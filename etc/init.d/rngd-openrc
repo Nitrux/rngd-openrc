@@ -3,7 +3,7 @@
 description="Starts the rngd entropy gathering daemon"
 
 command="/usr/sbin/rngd"
-supervisor="supervise-daemon"
+supervisor=supervise-daemon
 
 command_args="-f ${RNGD_OPTS}"
 
